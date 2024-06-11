@@ -1,0 +1,146 @@
+[
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "Linked_List.circular_LL",
+        "description": "Linked_List.circular_LL",
+        "peekOfCode": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass CircularLinkedList:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def display(self):\n        if self.head:",
+        "detail": "Linked_List.circular_LL",
+        "documentation": {}
+    },
+    {
+        "label": "CircularLinkedList",
+        "kind": 6,
+        "importPath": "Linked_List.circular_LL",
+        "description": "Linked_List.circular_LL",
+        "peekOfCode": "class CircularLinkedList:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def display(self):\n        if self.head:\n            print(\"This is your Circular Linked List:\")\n            n = self.length\n            temp = self.head\n            for _ in range(n):",
+        "detail": "Linked_List.circular_LL",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Linked_List.circular_LL",
+        "description": "Linked_List.circular_LL",
+        "peekOfCode": "def menu():\n    linked_list = CircularLinkedList()\n    while True:\n        print(\"\\n0. Create a Circular linked list with N nodes\")\n        print(\"1. Insert at start\")\n        print(\"2. Insert at end\")\n        print(\"3. Delete first node\")\n        print(\"4. Delete last node\")\n        print(\"5. Insert at position\")\n        print(\"6. Delete at position\")",
+        "detail": "Linked_List.circular_LL",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\na = Node(1)\nb = Node(2)\nc = Node(3)\nd = Node(4)\na.next = b\nb.next = c",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "a = Node(1)\nb = Node(2)\nc = Node(3)\nd = Node(4)\na.next = b\nb.next = c\nc.next = d\n# display the data of linked list  \ni = a\n# while (i != None):   # parenthesis is not compulsary ",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "b = Node(2)\nc = Node(3)\nd = Node(4)\na.next = b\nb.next = c\nc.next = d\n# display the data of linked list  \ni = a\n# while (i != None):   # parenthesis is not compulsary \n# while i != None:     # \"!=\" can be replace by \"is not\"",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "c = Node(3)\nd = Node(4)\na.next = b\nb.next = c\nc.next = d\n# display the data of linked list  \ni = a\n# while (i != None):   # parenthesis is not compulsary \n# while i != None:     # \"!=\" can be replace by \"is not\"\nwhile i is not None:",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "d = Node(4)\na.next = b\nb.next = c\nc.next = d\n# display the data of linked list  \ni = a\n# while (i != None):   # parenthesis is not compulsary \n# while i != None:     # \"!=\" can be replace by \"is not\"\nwhile i is not None:\n    print(i.data)",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "a.next",
+        "kind": 5,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "a.next = b\nb.next = c\nc.next = d\n# display the data of linked list  \ni = a\n# while (i != None):   # parenthesis is not compulsary \n# while i != None:     # \"!=\" can be replace by \"is not\"\nwhile i is not None:\n    print(i.data)\n    i = i.next",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "b.next",
+        "kind": 5,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "b.next = c\nc.next = d\n# display the data of linked list  \ni = a\n# while (i != None):   # parenthesis is not compulsary \n# while i != None:     # \"!=\" can be replace by \"is not\"\nwhile i is not None:\n    print(i.data)\n    i = i.next\n# print(\"The value of a is \")",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "c.next",
+        "kind": 5,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "c.next = d\n# display the data of linked list  \ni = a\n# while (i != None):   # parenthesis is not compulsary \n# while i != None:     # \"!=\" can be replace by \"is not\"\nwhile i is not None:\n    print(i.data)\n    i = i.next\n# print(\"The value of a is \")\n# print(a.data)",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "Linked_List.node",
+        "description": "Linked_List.node",
+        "peekOfCode": "i = a\n# while (i != None):   # parenthesis is not compulsary \n# while i != None:     # \"!=\" can be replace by \"is not\"\nwhile i is not None:\n    print(i.data)\n    i = i.next\n# print(\"The value of a is \")\n# print(a.data)\n# print(\"The address(next) of a is \")\n# print(a.next)",
+        "detail": "Linked_List.node",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "Linked_List.Singly_LL",
+        "description": "Linked_List.Singly_LL",
+        "peekOfCode": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass SinglyLinkedList:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def insert_at_start(self, data):\n        new_node = Node(data)",
+        "detail": "Linked_List.Singly_LL",
+        "documentation": {}
+    },
+    {
+        "label": "SinglyLinkedList",
+        "kind": 6,
+        "importPath": "Linked_List.Singly_LL",
+        "description": "Linked_List.Singly_LL",
+        "peekOfCode": "class SinglyLinkedList:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def insert_at_start(self, data):\n        new_node = Node(data)\n        new_node.next = self.head\n        self.head = new_node\n        self.length += 1\n    def insert_at_end(self, data):",
+        "detail": "Linked_List.Singly_LL",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Linked_List.Singly_LL",
+        "description": "Linked_List.Singly_LL",
+        "peekOfCode": "def menu():\n    linked_list = SinglyLinkedList()\n    while True:\n        print(\"\\n1. Insert at start\")\n        print(\"2. Insert at end\")\n        print(\"3. Delete first node\")\n        print(\"4. Delete last node\")\n        print(\"5. Insert at position\")\n        print(\"6. Delete at position\")\n        print(\"7. Display Linked-List\")",
+        "detail": "Linked_List.Singly_LL",
+        "documentation": {}
+    }
+]
