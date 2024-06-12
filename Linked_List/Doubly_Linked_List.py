@@ -1,7 +1,4 @@
-from platform import node
 import time
-from xml.dom.minidom import Element
-
 
 class Node:
     def __init__(self, data):

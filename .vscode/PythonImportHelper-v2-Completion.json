@@ -9,46 +9,30 @@
         "documentation": {}
     },
     {
-        "label": "node",
-        "importPath": "platform",
-        "description": "platform",
-        "isExtraImport": true,
-        "detail": "platform",
-        "documentation": {}
-    },
-    {
-        "label": "Element",
-        "importPath": "xml.dom.minidom",
-        "description": "xml.dom.minidom",
-        "isExtraImport": true,
-        "detail": "xml.dom.minidom",
-        "documentation": {}
-    },
-    {
         "label": "Node",
         "kind": 6,
-        "importPath": "Linked_List.circular_Linked_List",
-        "description": "Linked_List.circular_Linked_List",
+        "importPath": "Linked_List.circular_LL",
+        "description": "Linked_List.circular_LL",
         "peekOfCode": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass CircularLinkedList:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def display(self):\n        if self.head:",
-        "detail": "Linked_List.circular_Linked_List",
+        "detail": "Linked_List.circular_LL",
         "documentation": {}
     },
     {
         "label": "CircularLinkedList",
         "kind": 6,
-        "importPath": "Linked_List.circular_Linked_List",
-        "description": "Linked_List.circular_Linked_List",
+        "importPath": "Linked_List.circular_LL",
+        "description": "Linked_List.circular_LL",
         "peekOfCode": "class CircularLinkedList:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def display(self):\n        if self.head:\n            print(\"This is your Circular Linked List:\")\n            n = self.length\n            temp = self.head\n            for _ in range(n):",
-        "detail": "Linked_List.circular_Linked_List",
+        "detail": "Linked_List.circular_LL",
         "documentation": {}
     },
     {
         "label": "menu",
         "kind": 2,
-        "importPath": "Linked_List.circular_Linked_List",
-        "description": "Linked_List.circular_Linked_List",
+        "importPath": "Linked_List.circular_LL",
+        "description": "Linked_List.circular_LL",
         "peekOfCode": "def menu():\n    linked_list = CircularLinkedList()\n    while True:\n        print(\"\\n0. Create a Circular linked list with N nodes\")\n        print(\"1. Insert at start\")\n        print(\"2. Insert at end\")\n        print(\"3. Delete first node\")\n        print(\"4. Delete last node\")\n        print(\"5. Insert at position\")\n        print(\"6. Delete at position\")",
-        "detail": "Linked_List.circular_Linked_List",
+        "detail": "Linked_List.circular_LL",
         "documentation": {}
     },
     {
@@ -153,28 +137,28 @@
     {
         "label": "Node",
         "kind": 6,
-        "importPath": "Linked_List.Singly_Linked_List",
-        "description": "Linked_List.Singly_Linked_List",
+        "importPath": "Linked_List.Singly_LL",
+        "description": "Linked_List.Singly_LL",
         "peekOfCode": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass SinglyLinkedList:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def insert_at_start(self, data):\n        new_node = Node(data)",
-        "detail": "Linked_List.Singly_Linked_List",
+        "detail": "Linked_List.Singly_LL",
         "documentation": {}
     },
     {
         "label": "SinglyLinkedList",
         "kind": 6,
-        "importPath": "Linked_List.Singly_Linked_List",
-        "description": "Linked_List.Singly_Linked_List",
+        "importPath": "Linked_List.Singly_LL",
+        "description": "Linked_List.Singly_LL",
         "peekOfCode": "class SinglyLinkedList:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def insert_at_start(self, data):\n        new_node = Node(data)\n        new_node.next = self.head\n        self.head = new_node\n        self.length += 1\n    def insert_at_end(self, data):",
-        "detail": "Linked_List.Singly_Linked_List",
+        "detail": "Linked_List.Singly_LL",
         "documentation": {}
     },
     {
         "label": "menu",
         "kind": 2,
-        "importPath": "Linked_List.Singly_Linked_List",
-        "description": "Linked_List.Singly_Linked_List",
+        "importPath": "Linked_List.Singly_LL",
+        "description": "Linked_List.Singly_LL",
         "peekOfCode": "def menu():\n    linked_list = SinglyLinkedList()\n    while True:\n        print(\"\\n1. Insert at start\")\n        print(\"2. Insert at end\")\n        print(\"3. Delete first node\")\n        print(\"4. Delete last node\")\n        print(\"5. Insert at position\")\n        print(\"6. Delete at position\")\n        print(\"7. Display Linked-List\")",
-        "detail": "Linked_List.Singly_Linked_List",
+        "detail": "Linked_List.Singly_LL",
         "documentation": {}
     }
 ]
