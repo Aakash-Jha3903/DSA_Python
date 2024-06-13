@@ -35,7 +35,8 @@ class Stack:
 def menu():
     stack = Stack()
     while True:
-        print("\n1. Push")
+        print("\n0. Create a Stack of n elements ")
+        print("1. Push")
         print("2. Pop")
         print("3. Peek")
         print("4. Display Stack")

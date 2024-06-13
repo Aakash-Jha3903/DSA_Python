@@ -202,7 +202,7 @@
         "kind": 2,
         "importPath": "Stack.stack",
         "description": "Stack.stack",
-        "peekOfCode": "def menu():\n    stack = Stack()\n    while True:\n        print(\"\\n1. Push\")\n        print(\"2. Pop\")\n        print(\"3. Peek\")\n        print(\"4. Display Stack\")\n        print(\"5. Exit\\n\")\n        ch = input(\"Enter your choice: \")\n        while ch not in ('0', '1', '2', '3', '4', '5'):",
+        "peekOfCode": "def menu():\n    stack = Stack()\n    while True:\n        print(\"\\n0. Create a Stack of n elements \")\n        print(\"1. Push\")\n        print(\"2. Pop\")\n        print(\"3. Peek\")\n        print(\"4. Display Stack\")\n        print(\"5. Exit\\n\")\n        ch = input(\"Enter your choice: \")",
         "detail": "Stack.stack",
         "documentation": {}
     }
