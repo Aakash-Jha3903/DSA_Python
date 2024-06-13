@@ -169,5 +169,41 @@
         "peekOfCode": "def menu():\n    linked_list = SinglyLinkedList()\n    while True:\n        print(\"\\n1. Insert at start\")\n        print(\"2. Insert at end\")\n        print(\"3. Delete first node\")\n        print(\"4. Delete last node\")\n        print(\"5. Insert at position\")\n        print(\"6. Delete at position\")\n        print(\"7. Display Linked-List\")",
         "detail": "Linked_List.Singly_LL",
         "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "kind": 6,
+        "importPath": "Queue.queue",
+        "description": "Queue.queue",
+        "peekOfCode": "class Queue:\n    def __init__(self):\n        self.queue = []\n    def isEmpty(self):\n        return len(self.queue) == 0\n    def enqueue(self, data):\n        self.queue.append(data)\n        print(data, \"added to queue\")\n    def dequeue(self):\n        if not self.isEmpty():",
+        "detail": "Queue.queue",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Queue.queue",
+        "description": "Queue.queue",
+        "peekOfCode": "def menu():\n    queue = Queue()\n    while True:\n        print(\"\\n0. Create a Queue of n elements \")\n        print(\"1. Enqueue\")\n        print(\"2. Dequeue\")\n        print(\"3. Display Queue\")\n        print(\"4. Exit\\n\")\n        ch = input(\"Enter your choice: \")\n        while ch not in ('0', '1', '2', '3', '4'):",
+        "detail": "Queue.queue",
+        "documentation": {}
+    },
+    {
+        "label": "Stack",
+        "kind": 6,
+        "importPath": "Stack.stack",
+        "description": "Stack.stack",
+        "peekOfCode": "class Stack:\n    def __init__(self):\n        self.stack = []\n    def isEmpty(self):\n        # return self.stack == []\n        return len(self.stack) == 0\n    def pushStack(self, data):\n        self.stack.append(data)\n        print(f\"Pushed {data} onto the stack.\")\n    def popStack(self):",
+        "detail": "Stack.stack",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Stack.stack",
+        "description": "Stack.stack",
+        "peekOfCode": "def menu():\n    stack = Stack()\n    while True:\n        print(\"\\n1. Push\")\n        print(\"2. Pop\")\n        print(\"3. Peek\")\n        print(\"4. Display Stack\")\n        print(\"5. Exit\\n\")\n        ch = input(\"Enter your choice: \")\n        while ch not in ('0', '1', '2', '3', '4', '5'):",
+        "detail": "Stack.stack",
+        "documentation": {}
     }
 ]

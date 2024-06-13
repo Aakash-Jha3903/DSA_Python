@@ -138,7 +138,7 @@ def menu():
         elif ch == 8:
             print("Length of SLL is", linked_list.length)
         elif ch == 9:
-            print("Dhanyavad ji !")
+            print("Dhanyavad ji , fhir milengee ....")
             print("Created by")
             print("Aakash Jha")
             break

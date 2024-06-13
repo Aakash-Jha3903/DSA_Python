@@ -248,7 +248,7 @@ def menu():
         elif ch == 9:
             linked_list.delete_entire_list()
         elif ch == 10:
-            print("Dhanyavad ji !")
+            print("Dhanyavad ji , fhir milengee ....")
             print("Created by")
             print("Aakash Jha")
             break
