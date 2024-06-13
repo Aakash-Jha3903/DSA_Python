@@ -132,12 +132,12 @@ class CircularLinkedList:
 
         new_node = Node(data)
         if pos == 1:
-            if not self.head:  # (v.imp.) if LL is empty (1st insertion)!!
+            if not self.head:  # (v.imp.) if CLL is empty (1st insertion)!!
                 self.head = new_node
                 new_node.next = self.head
             else:
                 temp = self.head
-                while temp.next != self.head:  # Traverse to the last node
+                while temp.next != self.head:  # Traverse to the last node (due to Circular LL)
                     temp = temp.next
                 new_node.next = self.head
                 self.head = new_node
@@ -204,7 +204,14 @@ def menu():
         print("9. Delete Entire Circular linked list")
         print("10. Exit\n")
 
-        ch = int(input("Enter your choice: "))
+        ch = input("Enter your choice: ")
+        
+        while ch not  in ('0','1','2','3','4','5','6','7','8','9','10'):
+            print("Invalid choice. Please try again.")
+            ch = input("Enter your choice: ")
+        print("")
+        ch = int(ch)
+        
         if ch == 0:
             n = int(input("Enter the number of nodes: "))
             if n <= 0:
@@ -241,7 +248,7 @@ def menu():
         elif ch == 9:
             linked_list.delete_entire_list()
         elif ch == 10:
-            print("Thank you!")
+            print("Dhanyavad ji !")
             print("Created by")
             print("Aakash Jha")
             break

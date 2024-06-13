@@ -54,6 +54,15 @@
         "documentation": {}
     },
     {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Linked_List.Doubly_Linked_List",
+        "description": "Linked_List.Doubly_Linked_List",
+        "peekOfCode": "def menu():\n    linked_list = DoublyLinkedList()\n    while True:\n        print(\"\\n0. Create a Doubly Linked List with N nodes\")\n        print(\"1. Insert at start\")\n        print(\"2. Insert at end\")\n        print(\"3. Delete first node\")\n        print(\"4. Delete last node\")\n        print(\"5. Insert at position\")\n        print(\"6. Delete at position\")",
+        "detail": "Linked_List.Doubly_Linked_List",
+        "documentation": {}
+    },
+    {
         "label": "Node",
         "kind": 6,
         "importPath": "Linked_List.node",

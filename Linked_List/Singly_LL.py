@@ -101,7 +101,14 @@ def menu():
         print("8. Display Length of SLL")
         print("9. Exit\n")
 
-        ch = int(input("Enter your choice: "))
+        ch = input("Enter your choice: ")
+        
+        while ch not  in ('0','1','2','3','4','5','6','7','8','9','10'):
+            print("Invalid choice. Please try again.")
+            ch = input("Enter your choice: ")
+        print("")
+        ch = int(ch)
+        
         if ch == 1:
             data = int(input("Enter the data: "))
             linked_list.insert_at_start(data)
@@ -131,7 +138,7 @@ def menu():
         elif ch == 8:
             print("Length of SLL is", linked_list.length)
         elif ch == 9:
-            print("Thank you!")
+            print("Dhanyavad ji !")
             print("Created by")
             print("Aakash Jha")
             break
