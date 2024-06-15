@@ -205,5 +205,32 @@
         "peekOfCode": "def menu():\n    stack = Stack()\n    while True:\n        print(\"\\n0. Create a Stack of n elements \")\n        print(\"1. Push\")\n        print(\"2. Pop\")\n        print(\"3. Peek\")\n        print(\"4. Display Stack\")\n        print(\"5. Exit\\n\")\n        ch = input(\"Enter your choice: \")",
         "detail": "Stack.stack",
         "documentation": {}
+    },
+    {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "Stack.stack_Linked_List",
+        "description": "Stack.stack_Linked_List",
+        "peekOfCode": "class Node:\n    def __init__(self,data):\n        self.data = data\n        self.next = None\nclass Stack:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def isEmpty(self):\n        return self.head is None",
+        "detail": "Stack.stack_Linked_List",
+        "documentation": {}
+    },
+    {
+        "label": "Stack",
+        "kind": 6,
+        "importPath": "Stack.stack_Linked_List",
+        "description": "Stack.stack_Linked_List",
+        "peekOfCode": "class Stack:\n    def __init__(self):\n        self.head = None\n        self.length = 0\n    def isEmpty(self):\n        return self.head is None\n    def display(self):\n        if self.head:\n            print(\"This is your Stack:\")\n            current = self.head",
+        "detail": "Stack.stack_Linked_List",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Stack.stack_Linked_List",
+        "description": "Stack.stack_Linked_List",
+        "peekOfCode": "def menu():\n    stack = Stack()\n    while True:\n        print(\"\\nMenu:\")\n        print(\"0. Create a Stack of n Nodes\")\n        print(\"1. Push\")\n        print(\"2. Pop\")\n        print(\"3. Peek\")\n        print(\"4. Display\")\n        print(\"5. Exit\")",
+        "detail": "Stack.stack_Linked_List",
+        "documentation": {}
     }
 ]
