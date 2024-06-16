@@ -189,6 +189,33 @@
         "documentation": {}
     },
     {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "Queue.queue_Linked_List",
+        "description": "Queue.queue_Linked_List",
+        "peekOfCode": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\nclass Queue:\n    def __init__(self):\n        self.front = None\n        self.rear = None\n    def isEmpty(self):\n        return self.front is None",
+        "detail": "Queue.queue_Linked_List",
+        "documentation": {}
+    },
+    {
+        "label": "Queue",
+        "kind": 6,
+        "importPath": "Queue.queue_Linked_List",
+        "description": "Queue.queue_Linked_List",
+        "peekOfCode": "class Queue:\n    def __init__(self):\n        self.front = None\n        self.rear = None\n    def isEmpty(self):\n        return self.front is None\n    def display(self):\n        if self.isEmpty():\n            print(\"Queue is Empty ! \\nNothing to display\")\n        else:",
+        "detail": "Queue.queue_Linked_List",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Queue.queue_Linked_List",
+        "description": "Queue.queue_Linked_List",
+        "peekOfCode": "def menu():\n    queue = Queue()\n    while True:\n        print(\"\\n0. Create a Queue of n elements \")\n        print(\"1. Enqueue\")\n        print(\"2. Dequeue\")\n        print(\"3. Display Queue\")\n        print(\"4. Exit\\n\")\n        ch = input(\"Enter your choice: \")\n        while ch not in ('0', '1', '2', '3', '4'):",
+        "detail": "Queue.queue_Linked_List",
+        "documentation": {}
+    },
+    {
         "label": "Stack",
         "kind": 6,
         "importPath": "Stack.stack",
