@@ -216,11 +216,29 @@
         "documentation": {}
     },
     {
-        "label": "fact",
+        "label": "fact_recursive",
         "kind": 2,
         "importPath": "Recursion.factorial",
         "description": "Recursion.factorial",
-        "peekOfCode": "def fact(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * fact(n-1)\ntry:\n    num = float(input(\"Enter a whole number to finds its factorial : \"))\n    if num >= 0:\n        print(f\"The factorial of {num} is {fact(num)}\")\n    else:",
+        "peekOfCode": "def fact_recursive(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * fact_recursive(n - 1)\ndef fact_iterative(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result",
+        "detail": "Recursion.factorial",
+        "documentation": {}
+    },
+    {
+        "label": "fact_iterative",
+        "kind": 2,
+        "importPath": "Recursion.factorial",
+        "description": "Recursion.factorial",
+        "peekOfCode": "def fact_iterative(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\ndef main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Calculate Factorial (Recursive)\")\n        print(\"2. Calculate Factorial (Iterative)\")",
+        "detail": "Recursion.factorial",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Recursion.factorial",
+        "description": "Recursion.factorial",
+        "peekOfCode": "def main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Calculate Factorial (Recursive)\")\n        print(\"2. Calculate Factorial (Iterative)\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")\n        while choice not in ('1', '2', '3'):\n            print(\"Invalid choice. Please try again.\")\n            choice = input(\"Enter your choice: \")",
         "detail": "Recursion.factorial",
         "documentation": {}
     },
