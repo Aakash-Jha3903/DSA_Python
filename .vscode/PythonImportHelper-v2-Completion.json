@@ -288,6 +288,24 @@
         "documentation": {}
     },
     {
+        "label": "tower_of_hanoi",
+        "kind": 2,
+        "importPath": "Recursion.GCD",
+        "description": "Recursion.GCD",
+        "peekOfCode": "def tower_of_hanoi(n, source, auxiliary, target):\n    # if n == 1:\n        # print(f\"Move disk 1 from {source} to {target}\")\n    if n == 0:\n        return\n    tower_of_hanoi(n - 1, source, target, auxiliary)\n    print(f\"Move disk {n} from {source} to {target}\")\n    tower_of_hanoi(n - 1, auxiliary, source, target)\ndef main():\n    while True:",
+        "detail": "Recursion.GCD",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Recursion.GCD",
+        "description": "Recursion.GCD",
+        "peekOfCode": "def main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Solve Tower of Hanoi\")\n        print(\"2. Display minimum number of steps\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")\n        while choice not in ('1', '2', '3'):\n            print(\"Invalid choice. Please try again.\")\n            choice = input(\"Enter your choice: \")",
+        "detail": "Recursion.GCD",
+        "documentation": {}
+    },
+    {
         "label": "Stack",
         "kind": 6,
         "importPath": "Stack.stack",
