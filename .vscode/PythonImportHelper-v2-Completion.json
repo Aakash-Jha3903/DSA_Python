@@ -9,6 +9,15 @@
         "documentation": {}
     },
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "Node",
         "kind": 6,
         "importPath": "Linked_List.circular_LL",
@@ -288,11 +297,11 @@
         "documentation": {}
     },
     {
-        "label": "gcd",
+        "label": "HCF",
         "kind": 2,
         "importPath": "Recursion.GCD_and_LCM",
         "description": "Recursion.GCD_and_LCM",
-        "peekOfCode": "def gcd(a, b):\n    while b != 0:\n        a, b = b, a % b\n    return a\ndef lcm(a, b):\n    return abs(a * b) // gcd(a, b)\n    # return (a // gcd(a,b))* b \ndef main():\n    while True:\n        print(\"\\nMenu:\")",
+        "peekOfCode": "def HCF(a, b):\n    if (b == 0):\n        return abs(a)\n    else:\n        return HCF(b, a % b)\n    # while b != 0:\n    # a, b = b, a % b\n    # return a\ndef lcm(a, b):\n    if a == 0 or b == 0:",
         "detail": "Recursion.GCD_and_LCM",
         "documentation": {}
     },
@@ -301,7 +310,7 @@
         "kind": 2,
         "importPath": "Recursion.GCD_and_LCM",
         "description": "Recursion.GCD_and_LCM",
-        "peekOfCode": "def lcm(a, b):\n    return abs(a * b) // gcd(a, b)\n    # return (a // gcd(a,b))* b \ndef main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Calculate GCD\")\n        print(\"2. Calculate LCM\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")",
+        "peekOfCode": "def lcm(a, b):\n    if a == 0 or b == 0:\n        return 0\n    else:\n        return abs(a * b) // HCF(a, b)\n        # return (a // HCF(a,b))* b\ndef main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Calculate GCD\")",
         "detail": "Recursion.GCD_and_LCM",
         "documentation": {}
     },

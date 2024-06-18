@@ -2,21 +2,30 @@
 # largest number that divides two or more numbers without leaving a remainder
 # It is also called the highest common factor (HCF)
 
-# LCM (Least Common Multiple) of two numbers is the smallest number which can be divided by both numbers. 
-# LCM(a,b)=  ∣a×b∣ / GCD(a,b) 
+# LCM (Least Common Multiple) of two numbers is the smallest number which can be divided by both numbers.
+# LCM(a,b)=  ∣a×b∣ / GCD(a,b)
 
 # import math
 # print(math.gcd(100,200)) # 100  😂😂
 # print(math.lcm(4,6))  #12  😂😂
 
-def gcd(a, b):
-    while b != 0:
-        a, b = b, a % b
-    return a
+def HCF(a, b):
+    if (b == 0):
+        return abs(a)
+    else:
+        return HCF(b, a % b)
+    # while b != 0:
+    # a, b = b, a % b
+    # return a
+
 
 def lcm(a, b):
-    return abs(a * b) // gcd(a, b)
-    # return (a // gcd(a,b))* b 
+    if a == 0 or b == 0:
+        return 0
+    else:
+        return abs(a * b) // HCF(a, b)
+        # return (a // HCF(a,b))* b
+
 
 def main():
     while True:
@@ -36,8 +45,9 @@ def main():
             try:
                 num1 = int(input("Enter the first number: "))
                 num2 = int(input("Enter the second number: "))
-                result = gcd(num1, num2)
-                print(f"The greatest common divisor (GCD) of {num1} and {num2} is {result}")
+                result = HCF(num1, num2)
+                print(f"The greatest common divisor (GCD) of {
+                      num1} and {num2} is {result}")
             except ValueError:
                 print("Invalid input. Please enter valid integers.")
         elif choice == 2:
@@ -45,12 +55,17 @@ def main():
                 num1 = int(input("Enter the first number: "))
                 num2 = int(input("Enter the second number: "))
                 result = lcm(num1, num2)
-                print(f"The least common multiple (LCM) of {num1} and {num2} is {result}")
+                print(f"The least common multiple (LCM) of {
+                      num1} and {num2} is {result}")
             except ValueError:
                 print("Invalid input. Please enter valid integers.")
         elif choice == 3:
-            print("Exiting the program.....\nThank you, see you again!")
+            print("Exiting the program.....")
+            print("Dhanyavad ji , fhir milengee ....")
+            print("Created by")
+            print("Aakash Jha")
             break
+
 
 if __name__ == "__main__":
     main()
