@@ -288,21 +288,48 @@
         "documentation": {}
     },
     {
-        "label": "tower_of_hanoi",
+        "label": "gcd",
         "kind": 2,
-        "importPath": "Recursion.GCD",
-        "description": "Recursion.GCD",
-        "peekOfCode": "def tower_of_hanoi(n, source, auxiliary, target):\n    # if n == 1:\n        # print(f\"Move disk 1 from {source} to {target}\")\n    if n == 0:\n        return\n    tower_of_hanoi(n - 1, source, target, auxiliary)\n    print(f\"Move disk {n} from {source} to {target}\")\n    tower_of_hanoi(n - 1, auxiliary, source, target)\ndef main():\n    while True:",
-        "detail": "Recursion.GCD",
+        "importPath": "Recursion.GCD_and_LCM",
+        "description": "Recursion.GCD_and_LCM",
+        "peekOfCode": "def gcd(a, b):\n    while b != 0:\n        a, b = b, a % b\n    return a\ndef lcm(a, b):\n    return abs(a * b) // gcd(a, b)\n    # return (a // gcd(a,b))* b \ndef main():\n    while True:\n        print(\"\\nMenu:\")",
+        "detail": "Recursion.GCD_and_LCM",
+        "documentation": {}
+    },
+    {
+        "label": "lcm",
+        "kind": 2,
+        "importPath": "Recursion.GCD_and_LCM",
+        "description": "Recursion.GCD_and_LCM",
+        "peekOfCode": "def lcm(a, b):\n    return abs(a * b) // gcd(a, b)\n    # return (a // gcd(a,b))* b \ndef main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Calculate GCD\")\n        print(\"2. Calculate LCM\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")",
+        "detail": "Recursion.GCD_and_LCM",
         "documentation": {}
     },
     {
         "label": "main",
         "kind": 2,
-        "importPath": "Recursion.GCD",
-        "description": "Recursion.GCD",
+        "importPath": "Recursion.GCD_and_LCM",
+        "description": "Recursion.GCD_and_LCM",
+        "peekOfCode": "def main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Calculate GCD\")\n        print(\"2. Calculate LCM\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")\n        while choice not in ('1', '2', '3'):\n            print(\"Invalid choice. Please try again.\")\n            choice = input(\"Enter your choice: \")",
+        "detail": "Recursion.GCD_and_LCM",
+        "documentation": {}
+    },
+    {
+        "label": "tower_of_hanoi",
+        "kind": 2,
+        "importPath": "Recursion.Tower_of_Hanoi",
+        "description": "Recursion.Tower_of_Hanoi",
+        "peekOfCode": "def tower_of_hanoi(n, source, auxiliary, target):\n    # if n == 1:\n        # print(f\"Move disk 1 from {source} to {target}\")\n    if n == 0:\n        return\n    tower_of_hanoi(n - 1, source, target, auxiliary)\n    print(f\"Move disk {n} from {source} to {target}\")\n    tower_of_hanoi(n - 1, auxiliary, source, target)\ndef main():\n    while True:",
+        "detail": "Recursion.Tower_of_Hanoi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Recursion.Tower_of_Hanoi",
+        "description": "Recursion.Tower_of_Hanoi",
         "peekOfCode": "def main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Solve Tower of Hanoi\")\n        print(\"2. Display minimum number of steps\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")\n        while choice not in ('1', '2', '3'):\n            print(\"Invalid choice. Please try again.\")\n            choice = input(\"Enter your choice: \")",
-        "detail": "Recursion.GCD",
+        "detail": "Recursion.Tower_of_Hanoi",
         "documentation": {}
     },
     {
