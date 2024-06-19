@@ -18,7 +18,6 @@ def HCF(a, b):
     # a, b = b, a % b
     # return a
 
-
 def lcm(a, b):
     if a == 0 or b == 0:
         return 0
