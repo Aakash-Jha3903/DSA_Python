@@ -9,6 +9,15 @@
         "documentation": {}
     },
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -195,6 +204,204 @@
         "description": "Linked_List.Singly_LL",
         "peekOfCode": "def menu():\n    linked_list = SinglyLinkedList()\n    while True:\n        print(\"\\n1. Insert at start\")\n        print(\"2. Insert at end\")\n        print(\"3. Delete first node\")\n        print(\"4. Delete last node\")\n        print(\"5. Insert at position\")\n        print(\"6. Delete at position\")\n        print(\"7. Display Linked-List\")",
         "detail": "Linked_List.Singly_LL",
+        "documentation": {}
+    },
+    {
+        "label": "ite",
+        "kind": 6,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "class item :\n\tvalue = 0\n\tpriority = 0\nclass GFG :\n\t# Store the element of a priority queue\n\tpr = [None] * (100000)\n\t# Pointer to the last index\n\tsize = -1\n\t# Function to insert a new element\n\t# into priority queue",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "GF",
+        "kind": 6,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "class GFG :\n\t# Store the element of a priority queue\n\tpr = [None] * (100000)\n\t# Pointer to the last index\n\tsize = -1\n\t# Function to insert a new element\n\t# into priority queue\n\t@staticmethod\n\tdef enqueue( value, priority) :\n\t\t# Increase the size",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\tvalue",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\tvalue = 0\n\tpriority = 0\nclass GFG :\n\t# Store the element of a priority queue\n\tpr = [None] * (100000)\n\t# Pointer to the last index\n\tsize = -1\n\t# Function to insert a new element\n\t# into priority queue\n\t@staticmethod",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\tpriority",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\tpriority = 0\nclass GFG :\n\t# Store the element of a priority queue\n\tpr = [None] * (100000)\n\t# Pointer to the last index\n\tsize = -1\n\t# Function to insert a new element\n\t# into priority queue\n\t@staticmethod\n\tdef enqueue( value, priority) :",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\tpr",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\tpr = [None] * (100000)\n\t# Pointer to the last index\n\tsize = -1\n\t# Function to insert a new element\n\t# into priority queue\n\t@staticmethod\n\tdef enqueue( value, priority) :\n\t\t# Increase the size\n\t\tGFG.size += 1\n\t\t# Insert the element",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\tsize",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\tsize = -1\n\t# Function to insert a new element\n\t# into priority queue\n\t@staticmethod\n\tdef enqueue( value, priority) :\n\t\t# Increase the size\n\t\tGFG.size += 1\n\t\t# Insert the element\n\t\tGFG.pr[GFG.size] = item()\n\t\tGFG.pr[GFG.size].value = value",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tGFG.pr[GFG.size]",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\tGFG.pr[GFG.size] = item()\n\t\tGFG.pr[GFG.size].value = value\n\t\tGFG.pr[GFG.size].priority = priority\n\t# Function to check the top element\n\t@staticmethod\n\tdef peek() :\n\t\thighestPriority = -sys.maxsize\n\t\tind = -1\n\t\t# Check for the element with\n\t\t# highest priority",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tGFG.pr[GFG.size].value",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\tGFG.pr[GFG.size].value = value\n\t\tGFG.pr[GFG.size].priority = priority\n\t# Function to check the top element\n\t@staticmethod\n\tdef peek() :\n\t\thighestPriority = -sys.maxsize\n\t\tind = -1\n\t\t# Check for the element with\n\t\t# highest priority\n\t\ti = 0",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tGFG.pr[GFG.size].priority",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\tGFG.pr[GFG.size].priority = priority\n\t# Function to check the top element\n\t@staticmethod\n\tdef peek() :\n\t\thighestPriority = -sys.maxsize\n\t\tind = -1\n\t\t# Check for the element with\n\t\t# highest priority\n\t\ti = 0\n\t\twhile (i <= GFG.size) :",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\thighestPriority",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\thighestPriority = -sys.maxsize\n\t\tind = -1\n\t\t# Check for the element with\n\t\t# highest priority\n\t\ti = 0\n\t\twhile (i <= GFG.size) :\n\t\t\t# If priority is same choose\n\t\t\t# the element with the\n\t\t\t# highest value\n\t\t\tif (highestPriority == GFG.pr[i].priority and ind > -1 and GFG.pr[ind].value < GFG.pr[i].value) :",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tind",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\tind = -1\n\t\t# Check for the element with\n\t\t# highest priority\n\t\ti = 0\n\t\twhile (i <= GFG.size) :\n\t\t\t# If priority is same choose\n\t\t\t# the element with the\n\t\t\t# highest value\n\t\t\tif (highestPriority == GFG.pr[i].priority and ind > -1 and GFG.pr[ind].value < GFG.pr[i].value) :\n\t\t\t\thighestPriority = GFG.pr[i].priority",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ti",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\ti = 0\n\t\twhile (i <= GFG.size) :\n\t\t\t# If priority is same choose\n\t\t\t# the element with the\n\t\t\t# highest value\n\t\t\tif (highestPriority == GFG.pr[i].priority and ind > -1 and GFG.pr[ind].value < GFG.pr[i].value) :\n\t\t\t\thighestPriority = GFG.pr[i].priority\n\t\t\t\tind = i\n\t\t\telif(highestPriority < GFG.pr[i].priority) :\n\t\t\t\thighestPriority = GFG.pr[i].priority",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\thighestPriority",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\t\t\thighestPriority = GFG.pr[i].priority\n\t\t\t\tind = i\n\t\t\telif(highestPriority < GFG.pr[i].priority) :\n\t\t\t\thighestPriority = GFG.pr[i].priority\n\t\t\t\tind = i\n\t\t\ti += 1\n\t\t# Return position of the element\n\t\treturn ind\n\t# Function to remove the element with\n\t# the highest priority",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tind",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\t\t\tind = i\n\t\t\telif(highestPriority < GFG.pr[i].priority) :\n\t\t\t\thighestPriority = GFG.pr[i].priority\n\t\t\t\tind = i\n\t\t\ti += 1\n\t\t# Return position of the element\n\t\treturn ind\n\t# Function to remove the element with\n\t# the highest priority\n\t@staticmethod",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\thighestPriority",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\t\t\thighestPriority = GFG.pr[i].priority\n\t\t\t\tind = i\n\t\t\ti += 1\n\t\t# Return position of the element\n\t\treturn ind\n\t# Function to remove the element with\n\t# the highest priority\n\t@staticmethod\n\tdef dequeue() :\n\t\t# Find the position of the element",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\t\tind",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\t\t\tind = i\n\t\t\ti += 1\n\t\t# Return position of the element\n\t\treturn ind\n\t# Function to remove the element with\n\t# the highest priority\n\t@staticmethod\n\tdef dequeue() :\n\t\t# Find the position of the element\n\t\t# with highest priority",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tind",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\tind = GFG.peek()\n\t\t# Shift the element one index before\n\t\t# from the position of the element\n\t\t# with highest priority is found\n\t\ti = ind\n\t\twhile (i < GFG.size) :\n\t\t\tGFG.pr[i] = GFG.pr[i + 1]\n\t\t\ti += 1\n\t\t# Decrease the size of the\n\t\t# priority queue by one",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\ti",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\ti = ind\n\t\twhile (i < GFG.size) :\n\t\t\tGFG.pr[i] = GFG.pr[i + 1]\n\t\t\ti += 1\n\t\t# Decrease the size of the\n\t\t# priority queue by one\n\t\tGFG.size -= 1\n\t@staticmethod\n\tdef main( args) :\n\t\t# Function Call to insert elements",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tGFG.pr[i]",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\t\tGFG.pr[i] = GFG.pr[i + 1]\n\t\t\ti += 1\n\t\t# Decrease the size of the\n\t\t# priority queue by one\n\t\tGFG.size -= 1\n\t@staticmethod\n\tdef main( args) :\n\t\t# Function Call to insert elements\n\t\t# as per the priority\n\t\tGFG.enqueue(10, 2)",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tind",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\n\t\t# Dequeue the top element\n\t\tGFG.dequeue()\n\t\t# Check the top element\n\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\n\t\t# Dequeue the top element\n\t\tGFG.dequeue()\n\t\t# Check the top element",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tind",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\n\t\t# Dequeue the top element\n\t\tGFG.dequeue()\n\t\t# Check the top element\n\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\nif __name__==\"__main__\":\n\tGFG.main([])",
+        "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tind",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.priority_Queue",
+        "description": "Operating_System_Algorithms.priority_Queue",
+        "peekOfCode": "\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\nif __name__==\"__main__\":\n\tGFG.main([])",
+        "detail": "Operating_System_Algorithms.priority_Queue",
         "documentation": {}
     },
     {
