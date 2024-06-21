@@ -391,7 +391,7 @@
         "kind": 5,
         "importPath": "Operating_System_Algorithms.priority_Queue",
         "description": "Operating_System_Algorithms.priority_Queue",
-        "peekOfCode": "\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\n\t\t# Dequeue the top element\n\t\tGFG.dequeue()\n\t\t# Check the top element\n\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\nif __name__==\"__main__\":\n\tGFG.main([])",
+        "peekOfCode": "\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\n\t\t# Dequeue the top element\n\t\tGFG.dequeue()\n\t\t# Check the top element\n\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\nif __name__==\"__main__\":\n\tGFG.main([])\n# ---------------------------------------------------------------------------------------",
         "detail": "Operating_System_Algorithms.priority_Queue",
         "documentation": {}
     },
@@ -400,8 +400,17 @@
         "kind": 5,
         "importPath": "Operating_System_Algorithms.priority_Queue",
         "description": "Operating_System_Algorithms.priority_Queue",
-        "peekOfCode": "\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\nif __name__==\"__main__\":\n\tGFG.main([])",
+        "peekOfCode": "\t\tind = GFG.peek()\n\t\tprint(GFG.pr[ind].value)\nif __name__==\"__main__\":\n\tGFG.main([])\n# ---------------------------------------------------------------------------------------\n# Implement Priority Queue Using Linked List:  friday , saturday , sunday !!\n# ---------------------------------------------------------------------------------------\n#     \tjava    os    maths    dsa",
         "detail": "Operating_System_Algorithms.priority_Queue",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_words_in_string",
+        "kind": 2,
+        "importPath": "Questions.revers_word_without_word",
+        "description": "Questions.revers_word_without_word",
+        "peekOfCode": "def reverse_words_in_string(S):\n    words = S.split('.')\n    words.reverse()    \n    reversed_string = '.'.join(words)\n    return reversed_string",
+        "detail": "Questions.revers_word_without_word",
         "documentation": {}
     },
     {
