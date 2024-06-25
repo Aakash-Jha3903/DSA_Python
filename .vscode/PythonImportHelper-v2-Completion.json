@@ -27,6 +27,42 @@
         "documentation": {}
     },
     {
+        "label": "dijkstra",
+        "kind": 2,
+        "importPath": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "description": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "peekOfCode": "def dijkstra(graph, start):\n    distances = {node: float('infinity') for node in graph}\n    distances[start] = 0\n    visited = set()\n    while len(visited) < len(graph):\n        min_node = None\n        min_distance = float('infinity')\n        for node in graph:\n            if node not in visited and distances[node] < min_distance:\n                min_node = node",
+        "detail": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "description": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "peekOfCode": "graph = {\n    'A': {'B': 1, 'C': 4},\n    'B': {'A': 1, 'C': 2, 'D': 5},\n    'C': {'A': 4, 'B': 2, 'D': 1},\n    'D': {'B': 5, 'C': 1}\n}\nstart_node = 'A'\ndistances = dijkstra(graph, start_node)\nprint(f\"Shortest distances from {start_node}: {distances}\")",
+        "detail": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "start_node",
+        "kind": 5,
+        "importPath": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "description": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "peekOfCode": "start_node = 'A'\ndistances = dijkstra(graph, start_node)\nprint(f\"Shortest distances from {start_node}: {distances}\")",
+        "detail": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "distances",
+        "kind": 5,
+        "importPath": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "description": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "peekOfCode": "distances = dijkstra(graph, start_node)\nprint(f\"Shortest distances from {start_node}: {distances}\")",
+        "detail": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
+        "documentation": {}
+    },
+    {
         "label": "floyd_warshall",
         "kind": 2,
         "importPath": "Graphs.Floyd_warshall_Algorithm",
