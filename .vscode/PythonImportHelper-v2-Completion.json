@@ -450,6 +450,24 @@
         "documentation": {}
     },
     {
+        "label": "Deque",
+        "kind": 6,
+        "importPath": "Queue.DEQUEUE",
+        "description": "Queue.DEQUEUE",
+        "peekOfCode": "class Deque:\n    def __init__(self):\n        self.items = []\n    def is_empty(self):\n        return len(self.items) == 0\n    def add_front(self, item):\n        self.items.insert(0, item)\n        print(item, \"added to the front of deque\")\n    def add_rear(self, item):\n        self.items.append(item)",
+        "detail": "Queue.DEQUEUE",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Queue.DEQUEUE",
+        "description": "Queue.DEQUEUE",
+        "peekOfCode": "def menu():\n    deque = Deque()\n    while True:\n        print(\"\\n0. Create a Deque with n elements \")\n        print(\"1. Add to front\")\n        print(\"2. Add to rear\")\n        print(\"3. Remove from front\")\n        print(\"4. Remove from rear\")\n        print(\"5. Display Deque\")\n        print(\"6. Exit\\n\")",
+        "detail": "Queue.DEQUEUE",
+        "documentation": {}
+    },
+    {
         "label": "Queue",
         "kind": 6,
         "importPath": "Queue.queue",
