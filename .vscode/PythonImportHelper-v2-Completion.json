@@ -468,6 +468,33 @@
         "documentation": {}
     },
     {
+        "label": "Node",
+        "kind": 6,
+        "importPath": "Queue.DEQUEUE_Linked_List",
+        "description": "Queue.DEQUEUE_Linked_List",
+        "peekOfCode": "class Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n        self.prev = None\nclass Deque:\n    def __init__(self):\n        self.front = None\n        self.rear = None\n    def is_empty(self):",
+        "detail": "Queue.DEQUEUE_Linked_List",
+        "documentation": {}
+    },
+    {
+        "label": "Deque",
+        "kind": 6,
+        "importPath": "Queue.DEQUEUE_Linked_List",
+        "description": "Queue.DEQUEUE_Linked_List",
+        "peekOfCode": "class Deque:\n    def __init__(self):\n        self.front = None\n        self.rear = None\n    def is_empty(self):\n        return self.front is None\n    def add_front(self, item):\n        new_node = Node(item)\n        if self.is_empty():\n            self.front = self.rear = new_node",
+        "detail": "Queue.DEQUEUE_Linked_List",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "Queue.DEQUEUE_Linked_List",
+        "description": "Queue.DEQUEUE_Linked_List",
+        "peekOfCode": "def menu():\n    deque = Deque()\n    while True:\n        print(\"\\n0. Create a Deque with n elements \")\n        print(\"1. Add to front\")\n        print(\"2. Add to rear\")\n        print(\"3. Remove from front\")\n        print(\"4. Remove from rear\")\n        print(\"5. Display Deque\")\n        print(\"6. Exit\\n\")",
+        "detail": "Queue.DEQUEUE_Linked_List",
+        "documentation": {}
+    },
+    {
         "label": "Queue",
         "kind": 6,
         "importPath": "Queue.queue",
