@@ -243,6 +243,15 @@
         "documentation": {}
     },
     {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Operating_System_Algorithms.FCFS",
+        "description": "Operating_System_Algorithms.FCFS",
+        "peekOfCode": "def main():\n    bt = []\n    wt = []\n    tat = []\n    wtavg = 0\n    tatavg = 0\n    n = int(input(\"\\nEnter the number of processes -- \"))\n    # Input burst times for each process\n    for i in range(n):\n        bt.append(int(input(f\"Enter Burst Time for Process {i} -- \")))",
+        "detail": "Operating_System_Algorithms.FCFS",
+        "documentation": {}
+    },
+    {
         "label": "ite",
         "kind": 6,
         "importPath": "Operating_System_Algorithms.priority_Queue",
