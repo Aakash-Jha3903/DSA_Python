@@ -450,6 +450,15 @@
         "documentation": {}
     },
     {
+        "label": "SJF_Scheduling",
+        "kind": 2,
+        "importPath": "Operating_System_Algorithms.Shortest_Job_First (SJF)_Algo",
+        "description": "Operating_System_Algorithms.Shortest_Job_First (SJF)_Algo",
+        "peekOfCode": "def SJF_Scheduling(processes):\n    n = len(processes)\n    total_waiting_time = 0\n    total_turnaround_time = 0\n    # Sort processes based on burst time (shortest job first)\n    processes.sort(key=lambda x: x[1])\n    # Calculate waiting time and turnaround time\n    waiting_time = [0] * n\n    turnaround_time = [0] * n\n    # First process has 0 waiting time",
+        "detail": "Operating_System_Algorithms.Shortest_Job_First (SJF)_Algo",
+        "documentation": {}
+    },
+    {
         "label": "reverse_words_in_string",
         "kind": 2,
         "importPath": "Questions.revers_word_without_word",
