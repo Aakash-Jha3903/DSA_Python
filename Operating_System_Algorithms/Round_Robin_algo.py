@@ -6,7 +6,7 @@ def round_robin(processes, burst_times, time_slice):
     total_waiting_time = 0
     total_turnaround_time = 0
     
-    current_time = 0  # Current time in the CPU schedule
+    current_time = 0  
     while True:
         done = True
         for i in range(n):

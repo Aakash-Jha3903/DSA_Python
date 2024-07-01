@@ -454,7 +454,7 @@
         "kind": 2,
         "importPath": "Operating_System_Algorithms.Round_Robin_algo",
         "description": "Operating_System_Algorithms.Round_Robin_algo",
-        "peekOfCode": "def round_robin(processes, burst_times, time_slice):\n    n = len(processes) \n    remaining_burst_times = burst_times[:]  # Copy of burst times\n    waiting_times = [0] * n\n    turnaround_times = [0] * n\n    total_waiting_time = 0\n    total_turnaround_time = 0\n    current_time = 0  # Current time in the CPU schedule\n    while True:\n        done = True",
+        "peekOfCode": "def round_robin(processes, burst_times, time_slice):\n    n = len(processes) \n    remaining_burst_times = burst_times[:]  # Copy of burst times\n    waiting_times = [0] * n\n    turnaround_times = [0] * n\n    total_waiting_time = 0\n    total_turnaround_time = 0\n    current_time = 0  \n    while True:\n        done = True",
         "detail": "Operating_System_Algorithms.Round_Robin_algo",
         "documentation": {}
     },
