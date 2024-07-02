@@ -252,6 +252,33 @@
         "documentation": {}
     },
     {
+        "label": "Process",
+        "kind": 6,
+        "importPath": "Operating_System_Algorithms.priority_algorithm",
+        "description": "Operating_System_Algorithms.priority_algorithm",
+        "peekOfCode": "class Process:\n    def __init__(self, pid, burst_time, priority):\n        self.pid = pid\n        self.burst_time = burst_time\n        self.priority = priority\n        self.waiting_time = 0\n        self.turnaround_time = 0\ndef priority_scheduling(processes):\n    processes.sort(key=lambda x: x.priority)\n    processes[0].waiting_time = 0",
+        "detail": "Operating_System_Algorithms.priority_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "priority_scheduling",
+        "kind": 2,
+        "importPath": "Operating_System_Algorithms.priority_algorithm",
+        "description": "Operating_System_Algorithms.priority_algorithm",
+        "peekOfCode": "def priority_scheduling(processes):\n    processes.sort(key=lambda x: x.priority)\n    processes[0].waiting_time = 0\n    processes[0].turnaround_time = processes[0].burst_time\n    for i in range(1, len(processes)):\n        processes[i].waiting_time = processes[i - 1].waiting_time + processes[i - 1].burst_time\n        processes[i].turnaround_time = processes[i].waiting_time + processes[i].burst_time\ndef main():\n    n = int(input(\"Enter the number of processes: \"))\n    processes = []",
+        "detail": "Operating_System_Algorithms.priority_algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Operating_System_Algorithms.priority_algorithm",
+        "description": "Operating_System_Algorithms.priority_algorithm",
+        "peekOfCode": "def main():\n    n = int(input(\"Enter the number of processes: \"))\n    processes = []\n    for i in range(n):\n        burst_time = int(input(f\"Enter burst time for process {i + 1}: \"))\n        priority = int(input(f\"Enter priority for process {i + 1}: \"))\n        processes.append(Process(i + 1, burst_time, priority))\n    priority_scheduling(processes)\n    total_waiting_time = 0\n    total_turnaround_time = 0",
+        "detail": "Operating_System_Algorithms.priority_algorithm",
+        "documentation": {}
+    },
+    {
         "label": "ite",
         "kind": 6,
         "importPath": "Operating_System_Algorithms.priority_Queue",
