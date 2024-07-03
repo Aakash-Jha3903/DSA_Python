@@ -9,6 +9,15 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -240,6 +249,69 @@
         "description": "Linked_List.Singly_LL",
         "peekOfCode": "def menu():\n    linked_list = SinglyLinkedList()\n    while True:\n        print(\"\\n1. Insert at start\")\n        print(\"2. Insert at end\")\n        print(\"3. Delete first node\")\n        print(\"4. Delete last node\")\n        print(\"5. Insert at position\")\n        print(\"6. Delete at position\")\n        print(\"7. Display Linked-List\")",
         "detail": "Linked_List.Singly_LL",
+        "documentation": {}
+    },
+    {
+        "label": "BankersAlgorithm",
+        "kind": 6,
+        "importPath": "Operating_System_Algorithms.Bankers_Algorithm",
+        "description": "Operating_System_Algorithms.Bankers_Algorithm",
+        "peekOfCode": "class BankersAlgorithm:\n    def __init__(self, available, max_demand, allocation):\n        self.available = np.array(available)\n        self.max_demand = np.array(max_demand)\n        self.allocation = np.array(allocation)\n        self.num_processes = self.max_demand.shape[0]\n        self.num_resources = self.available.shape[0]\n        self.need = self.max_demand - self.allocation\n    def is_safe_state(self):\n        work = np.copy(self.available)",
+        "detail": "Operating_System_Algorithms.Bankers_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "available_resources",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.Bankers_Algorithm",
+        "description": "Operating_System_Algorithms.Bankers_Algorithm",
+        "peekOfCode": "available_resources = [3, 3, 2]\nmax_demand = [\n    [7, 5, 3],\n    [3, 2, 2],\n    [9, 0, 2],\n    [2, 2, 2],\n    [4, 3, 3]\n]\nallocation = [\n    [0, 1, 0],",
+        "detail": "Operating_System_Algorithms.Bankers_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "max_demand",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.Bankers_Algorithm",
+        "description": "Operating_System_Algorithms.Bankers_Algorithm",
+        "peekOfCode": "max_demand = [\n    [7, 5, 3],\n    [3, 2, 2],\n    [9, 0, 2],\n    [2, 2, 2],\n    [4, 3, 3]\n]\nallocation = [\n    [0, 1, 0],\n    [2, 0, 0],",
+        "detail": "Operating_System_Algorithms.Bankers_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "allocation",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.Bankers_Algorithm",
+        "description": "Operating_System_Algorithms.Bankers_Algorithm",
+        "peekOfCode": "allocation = [\n    [0, 1, 0],\n    [2, 0, 0],\n    [3, 0, 2],\n    [2, 1, 1],\n    [0, 0, 2]\n]\nbankers = BankersAlgorithm(available_resources, max_demand, allocation)\nprint(\"Initial State:\")\nprint(f\"Available Resources: {bankers.available}\")",
+        "detail": "Operating_System_Algorithms.Bankers_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "bankers",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.Bankers_Algorithm",
+        "description": "Operating_System_Algorithms.Bankers_Algorithm",
+        "peekOfCode": "bankers = BankersAlgorithm(available_resources, max_demand, allocation)\nprint(\"Initial State:\")\nprint(f\"Available Resources: {bankers.available}\")\nprint(f\"Maximum Demand: \\n{bankers.max_demand}\")\nprint(f\"Allocation: \\n{bankers.allocation}\")\nprint(f\"Need: \\n{bankers.need}\")\nprocess_num = 1\nrequest = [1, 0, 2]\nprint(f\"\\nProcess {process_num} requesting resources {request}\")\nbankers.request_resources(process_num, request)",
+        "detail": "Operating_System_Algorithms.Bankers_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "process_num",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.Bankers_Algorithm",
+        "description": "Operating_System_Algorithms.Bankers_Algorithm",
+        "peekOfCode": "process_num = 1\nrequest = [1, 0, 2]\nprint(f\"\\nProcess {process_num} requesting resources {request}\")\nbankers.request_resources(process_num, request)\nsafe, safe_sequence = bankers.is_safe_state()\nprint(f\"\\nSystem is in a {'safe' if safe else 'unsafe'} state.\")\nif safe:\n    print(f\"Safe sequence: {safe_sequence}\")",
+        "detail": "Operating_System_Algorithms.Bankers_Algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.Bankers_Algorithm",
+        "description": "Operating_System_Algorithms.Bankers_Algorithm",
+        "peekOfCode": "request = [1, 0, 2]\nprint(f\"\\nProcess {process_num} requesting resources {request}\")\nbankers.request_resources(process_num, request)\nsafe, safe_sequence = bankers.is_safe_state()\nprint(f\"\\nSystem is in a {'safe' if safe else 'unsafe'} state.\")\nif safe:\n    print(f\"Safe sequence: {safe_sequence}\")",
+        "detail": "Operating_System_Algorithms.Bankers_Algorithm",
         "documentation": {}
     },
     {
