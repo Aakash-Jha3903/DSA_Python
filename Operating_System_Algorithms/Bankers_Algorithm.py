@@ -1,5 +1,3 @@
-# To implement deadlock prevention technique.(Banker‘s Algorithm)
-
 import numpy as np
 
 class BankersAlgorithm:

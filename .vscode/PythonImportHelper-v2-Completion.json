@@ -549,6 +549,24 @@
         "documentation": {}
     },
     {
+        "label": "ProducerConsumer",
+        "kind": 6,
+        "importPath": "Operating_System_Algorithms.producer_consumer_problem",
+        "description": "Operating_System_Algorithms.producer_consumer_problem",
+        "peekOfCode": "class ProducerConsumer:\n    def __init__(self, buffer_size=10):\n        self.buffer = [None] * buffer_size\n        self.buffer_size = buffer_size\n        self.in_index = 0\n        self.out_index = 0\n    def produce(self, item):\n        if (self.in_index + 1) % self.buffer_size == self.out_index:\n            print(\"Buffer is Full\")\n        else:",
+        "detail": "Operating_System_Algorithms.producer_consumer_problem",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Operating_System_Algorithms.producer_consumer_problem",
+        "description": "Operating_System_Algorithms.producer_consumer_problem",
+        "peekOfCode": "def main():\n    pc = ProducerConsumer(buffer_size=10)\n    choice = 0\n    while choice != 3:\n        print(\"\\n1. Produce \\t 2. Consume \\t 3. Exit\")\n        choice = int(input(\"Enter your choice: \"))\n        if choice == 1:\n            item = int(input(\"Enter the value: \"))\n            pc.produce(item)\n        elif choice == 2:",
+        "detail": "Operating_System_Algorithms.producer_consumer_problem",
+        "documentation": {}
+    },
+    {
         "label": "round_robin",
         "kind": 2,
         "importPath": "Operating_System_Algorithms.Round_Robin_algo",
