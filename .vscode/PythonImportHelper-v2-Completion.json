@@ -18,6 +18,15 @@
         "documentation": {}
     },
     {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -321,6 +330,69 @@
         "description": "Operating_System_Algorithms.FCFS",
         "peekOfCode": "def main():\n    bt = []\n    wt = []\n    tat = []\n    wtavg = 0\n    tatavg = 0\n    n = int(input(\"\\nEnter the number of processes -- \"))\n    # Input burst times for each process\n    for i in range(n):\n        bt.append(int(input(f\"Enter Burst Time for Process {i} -- \")))",
         "detail": "Operating_System_Algorithms.FCFS",
+        "documentation": {}
+    },
+    {
+        "label": "producer",
+        "kind": 2,
+        "importPath": "Operating_System_Algorithms.inter_process_comm",
+        "description": "Operating_System_Algorithms.inter_process_comm",
+        "peekOfCode": "def producer():\n    global buffer, mutex, full, empty\n    item_count = 0\n    while True:\n        if mutex == 1 and empty != 0:\n            mutex -= 1\n            item = random.randint(1, 100)\n            buffer.append(item)\n            item_count += 1\n            full += 1",
+        "detail": "Operating_System_Algorithms.inter_process_comm",
+        "documentation": {}
+    },
+    {
+        "label": "consumer",
+        "kind": 2,
+        "importPath": "Operating_System_Algorithms.inter_process_comm",
+        "description": "Operating_System_Algorithms.inter_process_comm",
+        "peekOfCode": "def consumer():\n    global buffer, mutex, full, empty\n    item_count = 0\n    while True:\n        if mutex == 1 and full != 0:\n            mutex -= 1\n            item = buffer.pop(0)\n            item_count += 1\n            full -= 1\n            empty += 1",
+        "detail": "Operating_System_Algorithms.inter_process_comm",
+        "documentation": {}
+    },
+    {
+        "label": "buffer",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.inter_process_comm",
+        "description": "Operating_System_Algorithms.inter_process_comm",
+        "peekOfCode": "buffer = []\nbuffer_size = 10\n# Initialize the semaphore variables\nmutex = 1\nfull = 0\nempty = buffer_size\ndef producer():\n    global buffer, mutex, full, empty\n    item_count = 0\n    while True:",
+        "detail": "Operating_System_Algorithms.inter_process_comm",
+        "documentation": {}
+    },
+    {
+        "label": "buffer_size",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.inter_process_comm",
+        "description": "Operating_System_Algorithms.inter_process_comm",
+        "peekOfCode": "buffer_size = 10\n# Initialize the semaphore variables\nmutex = 1\nfull = 0\nempty = buffer_size\ndef producer():\n    global buffer, mutex, full, empty\n    item_count = 0\n    while True:\n        if mutex == 1 and empty != 0:",
+        "detail": "Operating_System_Algorithms.inter_process_comm",
+        "documentation": {}
+    },
+    {
+        "label": "mutex",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.inter_process_comm",
+        "description": "Operating_System_Algorithms.inter_process_comm",
+        "peekOfCode": "mutex = 1\nfull = 0\nempty = buffer_size\ndef producer():\n    global buffer, mutex, full, empty\n    item_count = 0\n    while True:\n        if mutex == 1 and empty != 0:\n            mutex -= 1\n            item = random.randint(1, 100)",
+        "detail": "Operating_System_Algorithms.inter_process_comm",
+        "documentation": {}
+    },
+    {
+        "label": "full",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.inter_process_comm",
+        "description": "Operating_System_Algorithms.inter_process_comm",
+        "peekOfCode": "full = 0\nempty = buffer_size\ndef producer():\n    global buffer, mutex, full, empty\n    item_count = 0\n    while True:\n        if mutex == 1 and empty != 0:\n            mutex -= 1\n            item = random.randint(1, 100)\n            buffer.append(item)",
+        "detail": "Operating_System_Algorithms.inter_process_comm",
+        "documentation": {}
+    },
+    {
+        "label": "empty",
+        "kind": 5,
+        "importPath": "Operating_System_Algorithms.inter_process_comm",
+        "description": "Operating_System_Algorithms.inter_process_comm",
+        "peekOfCode": "empty = buffer_size\ndef producer():\n    global buffer, mutex, full, empty\n    item_count = 0\n    while True:\n        if mutex == 1 and empty != 0:\n            mutex -= 1\n            item = random.randint(1, 100)\n            buffer.append(item)\n            item_count += 1",
+        "detail": "Operating_System_Algorithms.inter_process_comm",
         "documentation": {}
     },
     {
