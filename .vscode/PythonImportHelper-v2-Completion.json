@@ -639,6 +639,15 @@
         "documentation": {}
     },
     {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Operating_System_Algorithms.Resource_Allocation_Graph_(RAG)_algorithm",
+        "description": "Operating_System_Algorithms.Resource_Allocation_Graph_(RAG)_algorithm",
+        "peekOfCode": "def main():\n    np = int(input(\"Enter the number of processes: \"))\n    nr = int(input(\"Enter the number of resources: \"))\n    r = [int(input(f\"Total amount of resource R{i + 1}: \")) for i in range(nr)]\n    print(\"\\nEnter the request matrix:\")\n    request = [[int(input()) for _ in range(nr)] for _ in range(np)]\n    print(\"\\nEnter the allocation matrix:\")\n    alloc = [[int(input()) for _ in range(nr)] for _ in range(np)]\n    # Available resource calculation\n    avail = [r[j] - sum(alloc[i][j] for i in range(np)) for j in range(nr)]",
+        "detail": "Operating_System_Algorithms.Resource_Allocation_Graph_(RAG)_algorithm",
+        "documentation": {}
+    },
+    {
         "label": "round_robin",
         "kind": 2,
         "importPath": "Operating_System_Algorithms.Round_Robin_algo",
