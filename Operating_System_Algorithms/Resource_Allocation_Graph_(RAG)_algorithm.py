@@ -1,6 +1,6 @@
 # Implementing the Resource Allocation Graph (RAG) algorithm.
 
-def main():
+def main(): #😂😂😂😂
     np = int(input("Enter the number of processes: "))
     nr = int(input("Enter the number of resources: "))
 

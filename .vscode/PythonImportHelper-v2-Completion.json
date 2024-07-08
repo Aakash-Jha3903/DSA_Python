@@ -643,7 +643,7 @@
         "kind": 2,
         "importPath": "Operating_System_Algorithms.Resource_Allocation_Graph_(RAG)_algorithm",
         "description": "Operating_System_Algorithms.Resource_Allocation_Graph_(RAG)_algorithm",
-        "peekOfCode": "def main():\n    np = int(input(\"Enter the number of processes: \"))\n    nr = int(input(\"Enter the number of resources: \"))\n    r = [int(input(f\"Total amount of resource R{i + 1}: \")) for i in range(nr)]\n    print(\"\\nEnter the request matrix:\")\n    request = [[int(input()) for _ in range(nr)] for _ in range(np)]\n    print(\"\\nEnter the allocation matrix:\")\n    alloc = [[int(input()) for _ in range(nr)] for _ in range(np)]\n    # Available resource calculation\n    avail = [r[j] - sum(alloc[i][j] for i in range(np)) for j in range(nr)]",
+        "peekOfCode": "def main(): #😂😂😂😂\n    np = int(input(\"Enter the number of processes: \"))\n    nr = int(input(\"Enter the number of resources: \"))\n    r = [int(input(f\"Total amount of resource R{i + 1}: \")) for i in range(nr)]\n    print(\"\\nEnter the request matrix:\")\n    request = [[int(input()) for _ in range(nr)] for _ in range(np)]\n    print(\"\\nEnter the allocation matrix:\")\n    alloc = [[int(input()) for _ in range(nr)] for _ in range(np)]\n    # Available resource calculation\n    avail = [r[j] - sum(alloc[i][j] for i in range(np)) for j in range(nr)]",
         "detail": "Operating_System_Algorithms.Resource_Allocation_Graph_(RAG)_algorithm",
         "documentation": {}
     },
@@ -906,6 +906,15 @@
         "description": "Recursion.Tower_of_Hanoi",
         "peekOfCode": "def main():\n    while True:\n        print(\"\\nMenu:\")\n        print(\"1. Solve Tower of Hanoi\")\n        print(\"2. Display minimum number of steps\")\n        print(\"3. Exit\")\n        choice = input(\"Enter your choice: \")\n        while choice not in ('1', '2', '3'):\n            print(\"Invalid choice. Please try again.\")\n            choice = input(\"Enter your choice: \")",
         "detail": "Recursion.Tower_of_Hanoi",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 5,
+        "importPath": "Sorting_Algorithms.selection_sort",
+        "description": "Sorting_Algorithms.selection_sort",
+        "peekOfCode": "A = [64, 25, 12, 22, 11]\n# Traverse through all array elements\nfor i in range(len(A)-1):    \n    min_idx = i\n    for j in range(i+1, len(A)):\n        if A[min_idx] > A[j]:\n            min_idx = j\n    # Swap the found minimum element with the \"first\" element        \n    A[i], A[min_idx] = A[min_idx], A[i]\nprint (\"This is your Sorted array\")",
+        "detail": "Sorting_Algorithms.selection_sort",
         "documentation": {}
     },
     {
