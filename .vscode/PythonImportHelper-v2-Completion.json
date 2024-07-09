@@ -909,11 +909,20 @@
         "documentation": {}
     },
     {
-        "label": "A",
+        "label": "bubbleSort",
+        "kind": 2,
+        "importPath": "Sorting_Algorithms.Bubble_Sort",
+        "description": "Sorting_Algorithms.Bubble_Sort",
+        "peekOfCode": "def bubbleSort(arr):\n    n = len(arr)\n    # Traverse through all array elements\n    for i in range(n):\n        swapped = False\n        # Last i elements are already in place\n        for j in range(0, n-i-1):\n            # Swap if the element found > next element\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]",
+        "detail": "Sorting_Algorithms.Bubble_Sort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
         "kind": 5,
         "importPath": "Sorting_Algorithms.selection_sort",
         "description": "Sorting_Algorithms.selection_sort",
-        "peekOfCode": "A = [64, 25, 12, 22, 11]\n# Traverse through all array elements\nfor i in range(len(A)-1):    \n    min_idx = i\n    for j in range(i+1, len(A)):\n        if A[min_idx] > A[j]:\n            min_idx = j\n    # Swap the found minimum element with the \"first\" element        \n    A[i], A[min_idx] = A[min_idx], A[i]\nprint (\"This is your Sorted array\")",
+        "peekOfCode": "arr = [64, 25, 12, 22, 11]\n# Traverse through all array elements\nfor i in range(len(arr)-1):    \n    min_idx = i\n    for j in range(i+1, len(arr)):\n        if arr[min_idx] > arr[j]:\n            min_idx = j\n    # Swap the found minimum element with the \"first\" element        \n    arr[i], arr[min_idx] = arr[min_idx], arr[i]\nprint(\"This is your Sorted array : \",arr)",
         "detail": "Sorting_Algorithms.selection_sort",
         "documentation": {}
     },
