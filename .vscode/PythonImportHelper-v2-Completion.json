@@ -927,6 +927,42 @@
         "documentation": {}
     },
     {
+        "label": "merge",
+        "kind": 2,
+        "importPath": "Sorting_Algorithms.Merge_Sort",
+        "description": "Sorting_Algorithms.Merge_Sort",
+        "peekOfCode": "def merge(array, left, mid, right):\n    subArrayOne = mid - left + 1\n    subArrayTwo = right - mid\n    # Create temp arrays\n    leftArray = [0] * subArrayOne\n    rightArray = [0] * subArrayTwo\n    # Copy data to temp arrays leftArray[] and rightArray[]\n    for i in range(subArrayOne):\n        leftArray[i] = array[left + i]\n    for j in range(subArrayTwo):",
+        "detail": "Sorting_Algorithms.Merge_Sort",
+        "documentation": {}
+    },
+    {
+        "label": "mergeSort",
+        "kind": 2,
+        "importPath": "Sorting_Algorithms.Merge_Sort",
+        "description": "Sorting_Algorithms.Merge_Sort",
+        "peekOfCode": "def mergeSort(array, begin, end):\n    if begin >= end:\n        return\n    mid = begin + (end - begin) // 2\n    mergeSort(array, begin, mid)\n    mergeSort(array, mid + 1, end)\n    merge(array, begin, mid, end)\narr = [12, 11, 13, 5, 6, 7]\narr_size = len(arr)\nprint(\"Input Array is : \", arr)",
+        "detail": "Sorting_Algorithms.Merge_Sort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Sorting_Algorithms.Merge_Sort",
+        "description": "Sorting_Algorithms.Merge_Sort",
+        "peekOfCode": "arr = [12, 11, 13, 5, 6, 7]\narr_size = len(arr)\nprint(\"Input Array is : \", arr)\nmergeSort(arr, 0, arr_size - 1)\nprint(\"\\nSorted array is : \", arr)",
+        "detail": "Sorting_Algorithms.Merge_Sort",
+        "documentation": {}
+    },
+    {
+        "label": "arr_size",
+        "kind": 5,
+        "importPath": "Sorting_Algorithms.Merge_Sort",
+        "description": "Sorting_Algorithms.Merge_Sort",
+        "peekOfCode": "arr_size = len(arr)\nprint(\"Input Array is : \", arr)\nmergeSort(arr, 0, arr_size - 1)\nprint(\"\\nSorted array is : \", arr)",
+        "detail": "Sorting_Algorithms.Merge_Sort",
+        "documentation": {}
+    },
+    {
         "label": "arr",
         "kind": 5,
         "importPath": "Sorting_Algorithms.selection_sort",
