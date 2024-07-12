@@ -963,6 +963,42 @@
         "documentation": {}
     },
     {
+        "label": "partition",
+        "kind": 2,
+        "importPath": "Sorting_Algorithms.Quick_Sort",
+        "description": "Sorting_Algorithms.Quick_Sort",
+        "peekOfCode": "def partition(array, low, high):\n    '''Function to find the partition position'''\n    # Choose the rightmost element as pivot\n    pivot = array[high]\n    # Pointer for greater element\n    i = low - 1\n    # Traverse through all elements\n    # compare each element with pivot\n    for j in range(low, high):\n        if array[j] <= pivot:",
+        "detail": "Sorting_Algorithms.Quick_Sort",
+        "documentation": {}
+    },
+    {
+        "label": "quicksort",
+        "kind": 2,
+        "importPath": "Sorting_Algorithms.Quick_Sort",
+        "description": "Sorting_Algorithms.Quick_Sort",
+        "peekOfCode": "def quicksort(array, low, high):\n    if low < high:\n        # Find pivot element such that\n        # element smaller than pivot are on the left\n        # element greater than pivot are on the right\n        pi = partition(array, low, high)\n        # Recursive call on the left of pivot\n        quicksort(array, low, pi - 1)\n        # Recursive call on the right of pivot\n        quicksort(array, pi + 1, high)",
+        "detail": "Sorting_Algorithms.Quick_Sort",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "kind": 5,
+        "importPath": "Sorting_Algorithms.Quick_Sort",
+        "description": "Sorting_Algorithms.Quick_Sort",
+        "peekOfCode": "array = [10, 7, 8, 9, 1, 5]\nN = len(array)\nquicksort(array, 0, N - 1)\nprint('Sorted array:',array)",
+        "detail": "Sorting_Algorithms.Quick_Sort",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Sorting_Algorithms.Quick_Sort",
+        "description": "Sorting_Algorithms.Quick_Sort",
+        "peekOfCode": "N = len(array)\nquicksort(array, 0, N - 1)\nprint('Sorted array:',array)",
+        "detail": "Sorting_Algorithms.Quick_Sort",
+        "documentation": {}
+    },
+    {
         "label": "arr",
         "kind": 5,
         "importPath": "Sorting_Algorithms.selection_sort",
