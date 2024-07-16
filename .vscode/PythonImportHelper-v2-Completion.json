@@ -909,6 +909,15 @@
         "documentation": {}
     },
     {
+        "label": "search",
+        "kind": 2,
+        "importPath": "Searching_Algorithms.Linear_search",
+        "description": "Searching_Algorithms.Linear_search",
+        "peekOfCode": "def search(arr, target):\n    for i in enumerate(arr):\n        if (arr[i[0]] == target):\n            return i[0]\n    return -1\nif __name__ == \"__main__\":\n    input_arr = [32, 13, 90, 50, 40]\n    target_element = 50\n    result = search(input_arr, target_element)\n    if result == -1:",
+        "detail": "Searching_Algorithms.Linear_search",
+        "documentation": {}
+    },
+    {
         "label": "bubbleSort",
         "kind": 2,
         "importPath": "Sorting_Algorithms.Bubble_Sort",
