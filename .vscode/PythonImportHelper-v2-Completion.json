@@ -918,6 +918,15 @@
         "documentation": {}
     },
     {
+        "label": "binarySearch",
+        "kind": 2,
+        "importPath": "Searching_Algorithms.Recursive_Binary_Search",
+        "description": "Searching_Algorithms.Recursive_Binary_Search",
+        "peekOfCode": "def binarySearch(arr, low, high, x):\n    # Check base case\n    if high >= low:\n        mid = low + (high - low) // 2\n        if arr[mid] == x:\n            return mid\n        elif arr[mid] > x:\n            return binarySearch(arr, low, mid-1, x)\n        else:\n            return binarySearch(arr, mid + 1, high, x)",
+        "detail": "Searching_Algorithms.Recursive_Binary_Search",
+        "documentation": {}
+    },
+    {
         "label": "bubbleSort",
         "kind": 2,
         "importPath": "Sorting_Algorithms.Bubble_Sort",
