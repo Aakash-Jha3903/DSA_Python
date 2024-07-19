@@ -693,6 +693,51 @@
         "documentation": {}
     },
     {
+        "label": "getMedian",
+        "kind": 2,
+        "importPath": "Questions.Median_of_2sorted_arrays",
+        "description": "Questions.Median_of_2sorted_arrays",
+        "peekOfCode": "def getMedian(ar1, ar2, n):\n    i = 0\n    j = 0\n    m1 = -1\n    m2 = -1\n    count = 0\n    while count < n + 1:\n        count += 1\n        if i == n:\n            m1 = m2",
+        "detail": "Questions.Median_of_2sorted_arrays",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "Questions.Median_of_2sorted_arrays",
+        "description": "Questions.Median_of_2sorted_arrays",
+        "peekOfCode": "arr1 = [1, 12, 15, 26, 38]\narr2 = [2, 13, 17, 30, 45]\nn1 = len(arr1)\nn2 = len(arr2)\nif n1 == n2:\n    print(\"Median is \", getMedian(arr1, arr2, n1))\nelse:\n    print(\"Doesn't work for arrays of unequal size\")",
+        "detail": "Questions.Median_of_2sorted_arrays",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "Questions.Median_of_2sorted_arrays",
+        "description": "Questions.Median_of_2sorted_arrays",
+        "peekOfCode": "arr2 = [2, 13, 17, 30, 45]\nn1 = len(arr1)\nn2 = len(arr2)\nif n1 == n2:\n    print(\"Median is \", getMedian(arr1, arr2, n1))\nelse:\n    print(\"Doesn't work for arrays of unequal size\")",
+        "detail": "Questions.Median_of_2sorted_arrays",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "Questions.Median_of_2sorted_arrays",
+        "description": "Questions.Median_of_2sorted_arrays",
+        "peekOfCode": "n1 = len(arr1)\nn2 = len(arr2)\nif n1 == n2:\n    print(\"Median is \", getMedian(arr1, arr2, n1))\nelse:\n    print(\"Doesn't work for arrays of unequal size\")",
+        "detail": "Questions.Median_of_2sorted_arrays",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "Questions.Median_of_2sorted_arrays",
+        "description": "Questions.Median_of_2sorted_arrays",
+        "peekOfCode": "n2 = len(arr2)\nif n1 == n2:\n    print(\"Median is \", getMedian(arr1, arr2, n1))\nelse:\n    print(\"Doesn't work for arrays of unequal size\")",
+        "detail": "Questions.Median_of_2sorted_arrays",
+        "documentation": {}
+    },
+    {
         "label": "reverse_words_in_string",
         "kind": 2,
         "importPath": "Questions.revers_word_without_word",
