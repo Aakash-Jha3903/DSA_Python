@@ -36,6 +36,14 @@
         "documentation": {}
     },
     {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -1158,6 +1166,78 @@
         "description": "Stack.stack_Linked_List",
         "peekOfCode": "def menu():\n    stack = Stack()\n    while True:\n        print(\"\\nMenu:\")\n        print(\"0. Create a Stack of n Nodes\")\n        print(\"1. Push\")\n        print(\"2. Pop\")\n        print(\"3. Peek\")\n        print(\"4. Display\")\n        print(\"5. Exit\")",
         "detail": "Stack.stack_Linked_List",
+        "documentation": {}
+    },
+    {
+        "label": "addEdge",
+        "kind": 2,
+        "importPath": "Trees.Intro_Tree_implementation",
+        "description": "Trees.Intro_Tree_implementation",
+        "peekOfCode": "def addEdge(x, y, adj):\n    adj[x].append(y)\n    adj[y].append(x)\ndef printParents(node, adj, parent):\n    # current node is Root, thus, has no parent\n    if parent == 0:\n        print(f\"{node}->Root\")\n    else:\n        print(f\"{node}->{parent}\")\n    # Using DFS",
+        "detail": "Trees.Intro_Tree_implementation",
+        "documentation": {}
+    },
+    {
+        "label": "printParents",
+        "kind": 2,
+        "importPath": "Trees.Intro_Tree_implementation",
+        "description": "Trees.Intro_Tree_implementation",
+        "peekOfCode": "def printParents(node, adj, parent):\n    # current node is Root, thus, has no parent\n    if parent == 0:\n        print(f\"{node}->Root\")\n    else:\n        print(f\"{node}->{parent}\")\n    # Using DFS\n    for cur in adj[node]:\n        if cur != parent:\n            printParents(cur, adj, node)",
+        "detail": "Trees.Intro_Tree_implementation",
+        "documentation": {}
+    },
+    {
+        "label": "printChildren",
+        "kind": 2,
+        "importPath": "Trees.Intro_Tree_implementation",
+        "description": "Trees.Intro_Tree_implementation",
+        "peekOfCode": "def printChildren(Root, adj):\n    # Queue for the BFS\n    q = deque()\n    q.append(Root)\n    # visit array to keep track of nodes that have been visited\n    vis = [0] * len(adj)\n    # BFS\n    while q:\n        node = q.popleft()\n        vis[node] = 1",
+        "detail": "Trees.Intro_Tree_implementation",
+        "documentation": {}
+    },
+    {
+        "label": "printLeafNodes",
+        "kind": 2,
+        "importPath": "Trees.Intro_Tree_implementation",
+        "description": "Trees.Intro_Tree_implementation",
+        "peekOfCode": "def printLeafNodes(Root, adj):\n    # Leaf nodes have only one edge and are not the root\n    for i in range(1, len(adj)):\n        if len(adj[i]) == 1 and i != Root:\n            print(i,end=\" \")\ndef printDegrees(Root, adj):\n    for i in range(1, len(adj)):\n        print(i, \":\",end=\" \"),\n        # Root has no parent, thus, its degree is equal to\n        # the edges it is connected to",
+        "detail": "Trees.Intro_Tree_implementation",
+        "documentation": {}
+    },
+    {
+        "label": "printDegrees",
+        "kind": 2,
+        "importPath": "Trees.Intro_Tree_implementation",
+        "description": "Trees.Intro_Tree_implementation",
+        "peekOfCode": "def printDegrees(Root, adj):\n    for i in range(1, len(adj)):\n        print(i, \":\",end=\" \"),\n        # Root has no parent, thus, its degree is equal to\n        # the edges it is connected to\n        if i == Root:\n            print(len(adj[i]))\n        else:\n            print(len(adj[i]) - 1)\n# Driver code",
+        "detail": "Trees.Intro_Tree_implementation",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "Trees.Intro_Tree_implementation",
+        "description": "Trees.Intro_Tree_implementation",
+        "peekOfCode": "N = 7\nRoot = 1\n# Adjacency list to store the tree\nadj = [[] for _ in range(N + 1)]\n# Creating the tree\naddEdge(1, 2, adj)\naddEdge(1, 3, adj)\naddEdge(1, 4, adj)\naddEdge(2, 5, adj)\naddEdge(2, 6, adj)",
+        "detail": "Trees.Intro_Tree_implementation",
+        "documentation": {}
+    },
+    {
+        "label": "Root",
+        "kind": 5,
+        "importPath": "Trees.Intro_Tree_implementation",
+        "description": "Trees.Intro_Tree_implementation",
+        "peekOfCode": "Root = 1\n# Adjacency list to store the tree\nadj = [[] for _ in range(N + 1)]\n# Creating the tree\naddEdge(1, 2, adj)\naddEdge(1, 3, adj)\naddEdge(1, 4, adj)\naddEdge(2, 5, adj)\naddEdge(2, 6, adj)\naddEdge(4, 7, adj)",
+        "detail": "Trees.Intro_Tree_implementation",
+        "documentation": {}
+    },
+    {
+        "label": "adj",
+        "kind": 5,
+        "importPath": "Trees.Intro_Tree_implementation",
+        "description": "Trees.Intro_Tree_implementation",
+        "peekOfCode": "adj = [[] for _ in range(N + 1)]\n# Creating the tree\naddEdge(1, 2, adj)\naddEdge(1, 3, adj)\naddEdge(1, 4, adj)\naddEdge(2, 5, adj)\naddEdge(2, 6, adj)\naddEdge(4, 7, adj)\n# Printing the parents of each node\nprint(\"The parents of each node are:\")",
+        "detail": "Trees.Intro_Tree_implementation",
         "documentation": {}
     }
 ]
