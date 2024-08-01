@@ -53,6 +53,60 @@
         "documentation": {}
     },
     {
+        "label": "searchInMatrix",
+        "kind": 2,
+        "importPath": "Arrays.matrix",
+        "description": "Arrays.matrix",
+        "peekOfCode": "def searchInMatrix(arr, x):\n    # m=4,n=5\n    for i in range(0, 4):\n        for j in range(0, 5):\n            if(arr[i][j] == x):\n                return 1\n    return\nx = 8\narr = [[0, 6, 8, 9, 11],\n       [20, 22, 28, 29, 31],",
+        "detail": "Arrays.matrix",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Arrays.matrix",
+        "description": "Arrays.matrix",
+        "peekOfCode": "arr = [[0]*cols]*rows\nprint(arr)\n# Initializing a 2-D array with values\narr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n\"\"\" Traversal of a Matrix Data Structure\"\"\"\narr = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]\n# Traversing over all the rows\nfor i in range(0, 3):\n    # Traversing over all the columns of each row\n    for j in range(0, 4):",
+        "detail": "Arrays.matrix",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Arrays.matrix",
+        "description": "Arrays.matrix",
+        "peekOfCode": "arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n\"\"\" Traversal of a Matrix Data Structure\"\"\"\narr = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]\n# Traversing over all the rows\nfor i in range(0, 3):\n    # Traversing over all the columns of each row\n    for j in range(0, 4):\n        print(arr[i][j], end=\" \")\n    print(\"\")\n\"\"\" Searching in a Matrix Data Structure\"\"\"",
+        "detail": "Arrays.matrix",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Arrays.matrix",
+        "description": "Arrays.matrix",
+        "peekOfCode": "arr = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]\n# Traversing over all the rows\nfor i in range(0, 3):\n    # Traversing over all the columns of each row\n    for j in range(0, 4):\n        print(arr[i][j], end=\" \")\n    print(\"\")\n\"\"\" Searching in a Matrix Data Structure\"\"\"\ndef searchInMatrix(arr, x):\n    # m=4,n=5",
+        "detail": "Arrays.matrix",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Arrays.matrix",
+        "description": "Arrays.matrix",
+        "peekOfCode": "x = 8\narr = [[0, 6, 8, 9, 11],\n       [20, 22, 28, 29, 31],\n       [36, 38, 50, 61, 63],\n       [64, 66, 100, 122, 128]]\nif(searchInMatrix(arr, x)):\n    print(\"YES\")\nelse:\n    print(\"NO\")",
+        "detail": "Arrays.matrix",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Arrays.matrix",
+        "description": "Arrays.matrix",
+        "peekOfCode": "arr = [[0, 6, 8, 9, 11],\n       [20, 22, 28, 29, 31],\n       [36, 38, 50, 61, 63],\n       [64, 66, 100, 122, 128]]\nif(searchInMatrix(arr, x)):\n    print(\"YES\")\nelse:\n    print(\"NO\")",
+        "detail": "Arrays.matrix",
+        "documentation": {}
+    },
+    {
         "label": "dijkstra",
         "kind": 2,
         "importPath": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
