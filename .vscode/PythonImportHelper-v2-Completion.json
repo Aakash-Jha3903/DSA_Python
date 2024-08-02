@@ -161,6 +161,15 @@
         "documentation": {}
     },
     {
+        "label": "MaxHeap",
+        "kind": 6,
+        "importPath": "Heap.heap",
+        "description": "Heap.heap",
+        "peekOfCode": "class MaxHeap:\n    arr = []\n    maxSize = 0\n    heapSize = 0\n    def __init__(self, maxSize):\n        self.maxSize = maxSize\n        self.arr = [None]*maxSize\n        self.heapSize = 0\n    def MaxHeapify(self, i):\n        l = self.lChild(i)",
+        "detail": "Heap.heap",
+        "documentation": {}
+    },
+    {
         "label": "Node",
         "kind": 6,
         "importPath": "Linked_List.circular_LL",
