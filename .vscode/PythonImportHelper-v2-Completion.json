@@ -107,6 +107,150 @@
         "documentation": {}
     },
     {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "DSA_Codechef.2nd_largest",
+        "description": "DSA_Codechef.2nd_largest",
+        "peekOfCode": "arr = [3, 5, 1, 9, 6, -3]\n# arr = [3,5]\n# arr = [5, 3]\nlargest = arr[0]\nsecond = arr[1]\n# largest = 0\n# second = None\nif largest < second:\n    largest, second = second, largest\nfor i in arr[2:]:",
+        "detail": "DSA_Codechef.2nd_largest",
+        "documentation": {}
+    },
+    {
+        "label": "largest",
+        "kind": 5,
+        "importPath": "DSA_Codechef.2nd_largest",
+        "description": "DSA_Codechef.2nd_largest",
+        "peekOfCode": "largest = arr[0]\nsecond = arr[1]\n# largest = 0\n# second = None\nif largest < second:\n    largest, second = second, largest\nfor i in arr[2:]:\n    if largest < i:\n        second = largest\n        largest = i",
+        "detail": "DSA_Codechef.2nd_largest",
+        "documentation": {}
+    },
+    {
+        "label": "second",
+        "kind": 5,
+        "importPath": "DSA_Codechef.2nd_largest",
+        "description": "DSA_Codechef.2nd_largest",
+        "peekOfCode": "second = arr[1]\n# largest = 0\n# second = None\nif largest < second:\n    largest, second = second, largest\nfor i in arr[2:]:\n    if largest < i:\n        second = largest\n        largest = i\nprint(second)",
+        "detail": "DSA_Codechef.2nd_largest",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "DSA_Codechef.sum_of_subset",
+        "description": "DSA_Codechef.sum_of_subset",
+        "peekOfCode": "s = [2, 8, 1, 9, 6, 7, 11, 4]\nsubset = []\nindex = 0\nwhile index < len(s):\n    for i in s[index:]:\n        subset.append(i)\n        if sum(subset) == 12:\n            break\n        if sum(subset) > 12:\n            subset = []",
+        "detail": "DSA_Codechef.sum_of_subset",
+        "documentation": {}
+    },
+    {
+        "label": "subset",
+        "kind": 5,
+        "importPath": "DSA_Codechef.sum_of_subset",
+        "description": "DSA_Codechef.sum_of_subset",
+        "peekOfCode": "subset = []\nindex = 0\nwhile index < len(s):\n    for i in s[index:]:\n        subset.append(i)\n        if sum(subset) == 12:\n            break\n        if sum(subset) > 12:\n            subset = []\n            index += 1",
+        "detail": "DSA_Codechef.sum_of_subset",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 5,
+        "importPath": "DSA_Codechef.sum_of_subset",
+        "description": "DSA_Codechef.sum_of_subset",
+        "peekOfCode": "index = 0\nwhile index < len(s):\n    for i in s[index:]:\n        subset.append(i)\n        if sum(subset) == 12:\n            break\n        if sum(subset) > 12:\n            subset = []\n            index += 1\n            break  # Break out of the inner loop to restart from a new starting point",
+        "detail": "DSA_Codechef.sum_of_subset",
+        "documentation": {}
+    },
+    {
+        "label": "rem_dup",
+        "kind": 2,
+        "importPath": "GFG_DSA.List.Rem_dup_",
+        "description": "GFG_DSA.List.Rem_dup_",
+        "peekOfCode": "def rem_dup(l):\n    if len(l) <= 0:\n        return l\n    n = len(l)\n    temp = [0] * n\n    for i in range(1, n):\n        if l[i] == l[i - 1]:\n            # l[i-1] = \"-\"\n            # l.remove(i-1)\n            # l.append(\"-\")",
+        "detail": "GFG_DSA.List.Rem_dup_",
+        "documentation": {}
+    },
+    {
+        "label": "rem_dup_Comp_with_temp",
+        "kind": 2,
+        "importPath": "GFG_DSA.List.Rem_dup_",
+        "description": "GFG_DSA.List.Rem_dup_",
+        "peekOfCode": "def rem_dup_Comp_with_temp(l):\n    if len(l) <= 0:\n        return l\n    n = len(l)\n    # temp = [0] * n\n    temp = [l[0]]\n    pos = 0\n    for i in range(1, n - 1):\n        # if temp[i-1] == l[i]:\n        if temp[pos] == l[i]:",
+        "detail": "GFG_DSA.List.Rem_dup_",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "GFG_DSA.List.Rem_dup_",
+        "description": "GFG_DSA.List.Rem_dup_",
+        "peekOfCode": "arr = []\narr = [1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 6, 7, 8]\n#                        t  l\n# [1,2,3,0,0,0,0,0,0,0,]\nprint(rem_dup_Comp_with_temp(arr))\n# arr = [1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 6, 7, 8]\n# temp = [arr[0]]\n# print(type(temp))",
+        "detail": "GFG_DSA.List.Rem_dup_",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "GFG_DSA.List.Rem_dup_",
+        "description": "GFG_DSA.List.Rem_dup_",
+        "peekOfCode": "arr = [1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 6, 7, 8]\n#                        t  l\n# [1,2,3,0,0,0,0,0,0,0,]\nprint(rem_dup_Comp_with_temp(arr))\n# arr = [1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 6, 7, 8]\n# temp = [arr[0]]\n# print(type(temp))",
+        "detail": "GFG_DSA.List.Rem_dup_",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "GFG_DSA.List.tempCodeRunnerFile",
+        "description": "GFG_DSA.List.tempCodeRunnerFile",
+        "peekOfCode": "arr = [1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 6, 7, 8]\ntemp = [arr[0]]\nprint(type(temp))",
+        "detail": "GFG_DSA.List.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "temp",
+        "kind": 5,
+        "importPath": "GFG_DSA.List.tempCodeRunnerFile",
+        "description": "GFG_DSA.List.tempCodeRunnerFile",
+        "peekOfCode": "temp = [arr[0]]\nprint(type(temp))",
+        "detail": "GFG_DSA.List.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "GCD",
+        "kind": 2,
+        "importPath": "GFG_DSA.Mathematics.GCD",
+        "description": "GFG_DSA.Mathematics.GCD",
+        "peekOfCode": "def GCD(a,b):\n    if a%b==0:\n        return b\n    elif b%a==0:\n        return a\n    else:\n        return GCD(b%a,a)\n    return a if b == 0 else GCD(b, a % b)\nprint(GCD(21,18))",
+        "detail": "GFG_DSA.Mathematics.GCD",
+        "documentation": {}
+    },
+    {
+        "label": "nCr_Naive",
+        "kind": 2,
+        "importPath": "GFG_DSA.Recursion.nCr",
+        "description": "GFG_DSA.Recursion.nCr",
+        "peekOfCode": "def nCr_Naive(n,r):\n    def fact(num):\n        f=1\n        for i in range(1,num+1):\n            f = f * i\n        return f\n    return fact(n)//((fact(n-r))*fact(r))\ndef nCr_memo(n, r, memo={}):\n# Check if the result is already computed\n    if (n, r) in memo:",
+        "detail": "GFG_DSA.Recursion.nCr",
+        "documentation": {}
+    },
+    {
+        "label": "nCr_memo",
+        "kind": 2,
+        "importPath": "GFG_DSA.Recursion.nCr",
+        "description": "GFG_DSA.Recursion.nCr",
+        "peekOfCode": "def nCr_memo(n, r, memo={}):\n# Check if the result is already computed\n    if (n, r) in memo:\n        return memo[(n, r)]\n    if r == 0 or r == n:\n        return 1\n    if r == 1:\n        return n\n    # Store the result in the memo dictionary\n    memo[(n, r)] = nCr_memo(n - 1, r - 1, memo) + nCr_memo(n - 1, r, memo)",
+        "detail": "GFG_DSA.Recursion.nCr",
+        "documentation": {}
+    },
+    {
+        "label": "nCr",
+        "kind": 2,
+        "importPath": "GFG_DSA.Recursion.nCr",
+        "description": "GFG_DSA.Recursion.nCr",
+        "peekOfCode": "def nCr(n,r):\n    if r == 0 or r == n:\n        return 1\n    if r == 1:\n        return n\n    # Recursive calls ...........\n    return nCr(n - 1, r - 1) + nCr(n - 1, r)\n#contributed by RavinderSinghPB\nif __name__ == '__main__':\n    tcs=int(input())",
+        "detail": "GFG_DSA.Recursion.nCr",
+        "documentation": {}
+    },
+    {
         "label": "dijkstra",
         "kind": 2,
         "importPath": "Graphs.Shortest_path_algorithms.Dijkstra_algorithm",
