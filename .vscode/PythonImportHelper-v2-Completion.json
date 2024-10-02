@@ -1,5 +1,14 @@
 [
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "time",
         "kind": 6,
         "isExtraImport": true,
@@ -41,15 +50,6 @@
         "description": "collections",
         "isExtraImport": true,
         "detail": "collections",
-        "documentation": {}
-    },
-    {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
         "documentation": {}
     },
     {
@@ -197,6 +197,24 @@
         "documentation": {}
     },
     {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "GFG_DSA.List.Rotate_by_d_",
+        "description": "GFG_DSA.List.Rotate_by_d_",
+        "peekOfCode": "class Solution:\n    #Function to rotate an array by d elements in counter-clockwise direction. \n    def rotateArr(self, arr, d):\n        # #Your code here\n        # def rotateByOne(arr,t):     # aj ...............\n        #     if t == 0:\n        #         return arr\n        #     n = len(arr)\n        #     x = arr[0]\n        #     for i in range(1,n):",
+        "detail": "GFG_DSA.List.Rotate_by_d_",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "GFG_DSA.List.Rotate_by_d_",
+        "description": "GFG_DSA.List.Rotate_by_d_",
+        "peekOfCode": "def main():\n    T = int(input())\n    while (T > 0):\n        A = [int(x) for x in input().strip().split()]\n        nd = [int(x) for x in input().strip().split()]\n        D = nd[0]\n        ob = Solution()\n        ob.rotateArr(A, D)\n        for i in A:\n            print(i, end=\" \")",
+        "detail": "GFG_DSA.List.Rotate_by_d_",
+        "documentation": {}
+    },
+    {
         "label": "arr",
         "kind": 5,
         "importPath": "GFG_DSA.List.tempCodeRunnerFile",
@@ -246,7 +264,7 @@
         "kind": 2,
         "importPath": "GFG_DSA.Recursion.nCr",
         "description": "GFG_DSA.Recursion.nCr",
-        "peekOfCode": "def nCr(n,r):\n    if r == 0 or r == n:\n        return 1\n    if r == 1:\n        return n\n    # Recursive calls ...........\n    return nCr(n - 1, r - 1) + nCr(n - 1, r)\n#contributed by RavinderSinghPB\nif __name__ == '__main__':\n    tcs=int(input())",
+        "peekOfCode": "def nCr(n,r):\n    if r == 0 or r == n:\n        return 1\n    if r == 1:\n        return n\n    # Recursive calls ...........\n    return nCr(n - 1, r - 1) + nCr(n - 1, r)\n#contributed by RavinderSinghPB\n# if __name__ == '__main__':\n#     tcs=int(input())",
         "detail": "GFG_DSA.Recursion.nCr",
         "documentation": {}
     },
